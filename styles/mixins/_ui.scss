@@ -1,0 +1,79 @@
+/*
+* BoxShadow
+*/
+@mixin boxshadow($color:$colorSystemForShadow) {
+  box-shadow: $color;
+}
+
+
+/*
+* Btn
+*/
+@mixin btn($bg:$colorWhite, $color:$colorSystemRedThird, $radius:1rem, $padVertical:16px, $padHaurizontal:35px) {
+  background: $bg;
+  border-radius: $radius;
+  padding: $padVertical $padHaurizontal;
+  font-family: $FirstFontMedium;
+  //transition: all .3s ease;
+
+  &> span {
+    color: $color;
+  }
+
+  &:hover {
+    //background: darken($bg, 4%);
+    background: $colorJumbo;
+
+    &> span {
+      background: none;
+      -webkit-background-clip: unset !important;
+      -webkit-text-fill-color: $colorWhite !important;
+      color: $colorClouds;
+    }
+  }
+}
+
+
+/*
+* Link
+*/
+@mixin link($size:1rem, $defaultColor:$colorSystemRedCinnabar, $eventColor:$colorSystemRedCinnabar) {
+  font-size: $size;
+  color: $defaultColor;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: $FirstFontMedium;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: all .3s ease;
+    background-color: $defaultColor;
+  }
+
+  &:hover {
+    color: darken($eventColor, 2%);
+    
+    &::before {
+      width: 0;
+      background-color: darken($eventColor, 2%);
+    }
+  }
+}
+
+
+/*
+* LinearGrandientText
+*/
+@mixin LinearGrandientText($firsColor:$colorOutrageousOrange, $secondColor:$colorJumbo ) {
+  background: linear-gradient(0deg, $colorOutrageousOrange 0%, $secondColor 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

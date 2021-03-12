@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  border: 0;
+  z-index: 5;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+i {
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+:focus {
+  outline: 0;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+}

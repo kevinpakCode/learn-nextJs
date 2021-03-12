@@ -1,0 +1,39 @@
+/*---------------------------------*\
+*              GOLOS               *
+*----------------------------------*/
+@font-face {
+  font-family: Golos-Regular;
+  src: local("Golos-Regular"), url("/fonts/golos-text/Golos_Text_Regular.woff");
+}
+
+@font-face {
+  font-family: Golos-Medium;
+  src: local("Golos-Medium"), url("/fonts/golos-text/Golos_Text_Medium.woff");
+}
+
+@font-face {
+  font-family: Golos-Bold;
+  src: local("Golos-Bold"), url("/fonts/golos-text/Golos_Text_Bold.woff");
+}
+
+
+
+
+/*---------------------------------*\
+*             Circe                *
+*----------------------------------*/
+
+@font-face {
+  font-family: Circe-Bold;
+  src: local("Circe-Bold"), url("/fonts/circe/Circe-Bold.ttf");
+}
+
+@font-face {
+  font-family: Circe-ExtraBold;
+  src: local("Circe-ExtraBold"), url("/fonts/circe/Circe-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Circe-Linght;
+  src: local("Circe-Linght"), url("/fonts/circe/Circe-Linght.ttf");
+}

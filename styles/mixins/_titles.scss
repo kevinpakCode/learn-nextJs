@@ -1,0 +1,8 @@
+@mixin FistTitle($size:2.75rem, $color:$colorBlack){
+  font-size: $size !important;
+  color: $color !important;
+  line-height: $size !important;
+  font-family: $FirstFontBold !important;
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+}

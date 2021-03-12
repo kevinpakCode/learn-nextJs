@@ -1,0 +1,13 @@
+/*
+==> icon-close
+*/
+.icon-close {
+  @include icons-formats(14px, 14px, 'i/icon-close.svg', $colorBlack, $colorRed);
+}
+
+/*
+==> icon-cookie
+*/
+.icon-cookie {
+  @include icons-formats(30px, 30px, 'i/icon-cookie.svg', $colorBlack, $colorRed);
+}

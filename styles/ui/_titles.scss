@@ -1,0 +1,62 @@
+/*
+* Title H1
+*/
+h1,
+.h1 {
+  @include FistTitle();
+
+  @media (max-width: 960px) {
+    font-size: 2.125rem !important;
+    line-height: 2rem !important;
+  }
+}
+
+/*
+* Title H2
+*/
+h2,
+.h2 {
+  @include FistTitle(1.5rem);
+  margin-bottom: 20px !important;
+}
+
+/*
+* Title H3
+*/
+h3,
+.h3 {
+  @include FistTitle(1.3rem);
+  margin-bottom: 20px !important;
+
+  @media (min-width: 769px) {
+    font-size: 1.5rem;
+  }
+}
+
+/*
+* Title H4
+*/
+h4,
+.h4 {
+  @include FistTitle(1rem);
+  margin-bottom: 15px !important;
+
+  @media (min-width: 769px) {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+/*
+* Title H5
+*/
+h5,
+.h5 {
+  @include FistTitle(0.8rem);
+  margin-bottom: 15px !important;
+
+  @media (min-width: 769px) {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  }
+}
